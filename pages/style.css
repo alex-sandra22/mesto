@@ -86,6 +86,10 @@
     margin-left: 10px;
     border: 1px solid white;
     background-color: #000000;
+    transform:opacity 0.2s linear;
+}
+.profile__edit_button:hover{
+    opacity: 0.3;
 }
 @media screen and (min-width:581px){
     .profile__edit_button{
@@ -128,6 +132,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border:3px solid #FFFFFF;
+    background-image: url(/photos/Vector\ 3.0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+    transform: opacity 0.2s linear;
+}
+.profile__add_button:hover{
+    opacity: 0.5;
 }
 @media screen and (min-width:581px) {
     .profile__add_button{
@@ -191,6 +204,16 @@
     width: 22px;
     height: 19px;
     margin: 31px 20px 30px;
+    background-image: url(/photos/Vector\ \(Stroke\).png);
+    border: #FFFFFF;
+    background-color: #FFFFFF;
+    transition: opacity 0.1s ease;
+}
+.element__group:hover{
+    opacity: 0.4;
+}
+.elements__add{
+    background-color: #000000;
 }
 .footer{
     display: flex;

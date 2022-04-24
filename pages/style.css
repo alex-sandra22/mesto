@@ -55,7 +55,7 @@
 }
 @media screen and (min-width:581px) {
     .profile__avatar{
-        margin:0px 30px 0px  0px ;
+        margin:0px 30px 0px  0px;
     }
 }
 .profile__info{
@@ -74,11 +74,10 @@
     margin:0 auto;
     font-weight: 500;
     font-family:'Inter';
-    font-size:27px ;
+    font-size:27px;
     line-height: 1.2;
     color: white;
     text-align: center;
-    
 }
 .profile__edit_button{
     width: 18px;
@@ -129,7 +128,6 @@
     box-sizing: border-box;
     display: flex;
     background-color: #000000;
-    display: flex;
     align-items: center;
     justify-content: center;
     border:3px solid #FFFFFF;
@@ -271,7 +269,7 @@
     background-color: #FFFFFF;
     display: grid;
     border-radius: 10px; 
-    overflow:hidden;           
+    overflow:hidden;
 }
 .element__photo{
     grid-area: "photo";

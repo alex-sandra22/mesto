@@ -133,7 +133,7 @@
     align-items: center;
     justify-content: center;
     border:3px solid #FFFFFF;
-    background-image: url(/photos/Vector\ 3.0.png);
+    background-image: url(../photos/Vector\ 3.0.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 22px;
@@ -153,15 +153,107 @@
     color:white;
     box-sizing: border-box; 
 }
-.form{
+
+.popup{
     display: none;
+}
+
+.popup_opened{
+    display: block;
+}
+.popup_bc{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+.popup__container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+    background: #FFFFFF;
+    box-shadow: -16px -8px 25px 0px rgb(0 0 0 / 41%);
+    border-radius: 10px;
+    min-width: 238px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 22px;
+
+}
+@media screen and (min-width:581px) {
+    .popup__container{
+        padding: 36px;
+        min-width: 358px;
+    }
+}
+.popup__close{
+    background-image: url(../photos/Close\ Icon1234.png);
+    color: #FFFFFF;
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+@media screen and (min-width:581px) {
+    .popup__close{
+        right: -40px;
+        top: -40px;
+        width: 32px;
+        height: 32px;
+        background-size: 32px;
+    }
+}
+.form__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 75px;
+}
+@media screen and (min-width:581px) {
+    .form__title{
+        margin-bottom: 54px;
+    }
+}
+.form{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #000000;
+    border:0;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 13px;
+    margin-bottom: 30px;
+
+}
+.form__button{
+    margin-top: 15px;
+    height: 46px;
     background-color: #000000;
-    opacity: 0.5;
-    
-    width: 282px;
-    height: 322px;
-    margin:auto;
-    
+    color: #FFFFFF;
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    align-items: center;
+    justify-content: center;
 }
 .elements{ 
     display: grid;
@@ -204,7 +296,7 @@
     width: 22px;
     height: 19px;
     margin: 31px 20px 30px;
-    background-image: url(/photos/Vector\ \(Stroke\).png);
+    background-image: url(../photos/Vector\ \(Stroke\).png);
     border: #FFFFFF;
     background-color: #FFFFFF;
     transition: opacity 0.1s ease;
@@ -212,8 +304,8 @@
 .element__group:hover{
     opacity: 0.4;
 }
-.elements__add{
-    background-color: #000000;
+.element__group-add{
+    background-image: url(../photos/Union.png);
 }
 .footer{
     display: flex;

@@ -23,7 +23,8 @@ name.value='';
 profession.value='';
 })
 let like = document.querySelectorAll(".element__group");
-let groupadd = document.querySelectorAll('.element__group-add');
+let groupadd = document.querySelectorAll(".element__group-add");
 like.addEventListener("click", function(){
+    console.log("CONTROL");
     like.classList.toggle("element__group-add");
 })

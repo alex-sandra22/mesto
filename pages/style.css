@@ -67,7 +67,7 @@
         justify-items: start;
     } 
 }
-.profilee__line{
+.profile__line{
     display: inline;
 }
 .profile__name{
@@ -79,7 +79,7 @@
     color: white;
     text-align: center;
 }
-.profile__edit_button{
+.profile__edit-button{
     width: 18px;
     height: 18px;
     margin-left: 10px;
@@ -87,11 +87,11 @@
     background-color: #000000;
     transform:opacity 0.2s linear;
 }
-.profile__edit_button:hover{
+.profile__edit-button:hover{
     opacity: 0.3;
 }
 @media screen and (min-width:581px){
-    .profile__edit_button{
+    .profile__edit-button{
         width: 24px;
         height: 24px;
     }

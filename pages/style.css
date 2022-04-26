@@ -122,7 +122,7 @@
         margin:0;
     }
 }
-.profile__add_button{
+.profile__add-button{
     height: 50px;
     width: 282px;
     box-sizing: border-box;
@@ -137,11 +137,11 @@
     background-size: 22px;
     transform: opacity 0.2s linear;
 }
-.profile__add_button:hover{
+.profile__add-button:hover{
     opacity: 0.5;
 }
 @media screen and (min-width:581px) {
-    .profile__add_button{
+    .profile__add-button{
         width: 150px;
     }
 }
@@ -213,7 +213,7 @@
         background-size: 32px;
     }
 }
-.form__title{
+.popup__title{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 900;
@@ -222,7 +222,7 @@
     margin-bottom: 75px;
 }
 @media screen and (min-width:581px) {
-    .form__title{
+    .popup__title{
         margin-bottom: 54px;
     }
 }
@@ -290,7 +290,7 @@
     height: 23px;
     margin: 25px 21px 32px;
 }
-.element__group{
+.element__group{ 
     width: 22px;
     height: 19px;
     margin: 31px 20px 30px;

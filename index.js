@@ -4,10 +4,10 @@ openpopup.addEventListener("click",function(){
     popup.classList.add("popup_opened");
 })
 let form = document.querySelector(".form");
-let button = document.querySelector(".form__button");
+let button = document.querySelector(".popup__button");
 button.addEventListener("submit", function(){
-    let name = document.querySelector(".form__name");
-    let profession = document.querySelector(".form__profession");
+    let name = document.querySelector(".popup__name");
+    let profession = document.querySelector(".popup__profession");
     form.textContent('beforeend', `
     <div class="profile__info">
           <div class="profilee__line">

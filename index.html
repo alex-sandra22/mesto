@@ -11,22 +11,22 @@
     <div class="content">
         <header class="header">
             <img class="header__logo" src="./photos/Vector.png" alt="здесь должен быть логотип">
-            <hr class="header__line">
+            
         </header>
         <section class="profile">
-            <div class="container">
+            <div class="profile__container">
               <img class="profile__avatar" src="./photos/image.jpg" alt="здесь должна быть аватарка">
               <div class="profile__info">
-                <div class="profile__line">
-                    <h1 class="profile__name">Жак-Ив Кусто<button  class="profile__edit-button" >
+                <div class="profile__content">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button  class="profile__edit-button" type="button" >
                         <img class="vector open-popup" src="./photos/Vector2.0.png" alt="здесь что-то  есть" >
                     </button>
-                    </h1>
                 </div>
-                <h3 class="profile__inf">Исследователь океана</h3>
+                <p class="profile__profession">Исследователь океана</p>
               </div>
             </div>
-            <button class="profile__add-button"></button>
+            <button class="profile__add-button" type="button"></button>
         </section>
         <section class="elements">
             <div class="element">
@@ -34,7 +34,7 @@
                     <img class="element__photo" src="./photos/clement-m-igX2deuD9lc-unsplash.jpg " alt="Здесь должна быть картинка ">
                     <div class="element__nogroup">
                         <h2 class="element__text">картинка</h2>
-                        <button class="element__group"></button>
+                        <button class="element__group" type="button"></button>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <img class="element__photo" src="./photos/kirill-pershin-1088404-unsplash.jpg " alt="Здесь должна быть картинка ">
                     <div class="element__nogroup">
                         <h2 class="element__text">картинка</h2>
-                        <button class="element__group"></button>
+                        <button class="element__group" type="button"></button>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     <img class="element__photo" src="./photos/kirill-pershin-1404681-unsplash.jpg " alt="Здесь должна быть картинка ">
                     <div class="element__nogroup">
                         <h2 class="element__text">картинка</h2>
-                        <button class="element__group"></button>
+                        <button class="element__group" type="button"></button>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                     <img class="element__photo" src="./photos/kirill-pershin-1556355-unsplash.jpg " alt="Здесь должна быть картинка ">
                     <div class="element__nogroup">
                         <h2 class="element__text">картинка</h2>
-                       <button class="element__group"></button>
+                       <button class="element__group" type="button"></button>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                     <img class="element__photo" src="./photos/sergey-semukhin-e0WN3koMMMk-unsplash.jpg " alt="Здесь должна быть картинка ">
                     <div class="element__nogroup">
                         <h2 class="element__text">картинка</h2>
-                        <button class="element__group"></button>
+                        <button class="element__group" type="button"></button>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                     <img class="element__photo" src="./photos/viktor-avdeev-rZNBBaHp3jM-unsplash.jpg " alt="Здесь должна быть картинка ">
                     <div class="element__nogroup">
                         <h2 class="element__text">картинка</h2>
-                        <button class="element__group"></button>
+                        <button class="element__group" type="submit"></button>
                     </div>
                 </div>
             </div>
@@ -92,11 +92,10 @@
                 <form class="popup__container">
                     <button class="popup__close"></button>
                     <h2 class="popup__title">Редактировать профиль</h2>
-                    <input class="form popup__name" type="text" placeholder="Жак-Ив Кусто">
-                    <input class="form popup__profession" type="text" placeholder="Исследователь океана">
+                    <input class="form popup__name" type="name" value="Жак-Ив Кусто">
+                    <input class="form popup__profession" type="text" value="Исследователь океана">
                     <button class="popup__button" type="submit">Сохранить</button>
                 </form>
-                <!--<button class="popup__close"></button>-->
             </div>
         </section>
     </div>

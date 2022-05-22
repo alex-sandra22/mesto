@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Место</title>
-    <link rel="stylesheet" href="./pages/style.css">
+    <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="page">
     <div class="content">
@@ -33,8 +33,8 @@
                 <div class="element__rectagle">
                     <img class="element__photo" src="./photos/clement-m-igX2deuD9lc-unsplash.jpg " alt="Здесь должна быть картинка ">
                     <div class="element__nogroup">
-                        <h2 class="element__text">картинка</h2>
-                        <button class="element__group" type="button"></button>
+                        <h2 class="element__text">Картинка</h2>
+                        <button class="element__group" type="button" id="like"></button>
                     </div>
                 </div>
             </div>
@@ -42,8 +42,8 @@
                 <div class="element__rectagle">
                     <img class="element__photo" src="./photos/kirill-pershin-1088404-unsplash.jpg " alt="Здесь должна быть картинка ">
                     <div class="element__nogroup">
-                        <h2 class="element__text">картинка</h2>
-                        <button class="element__group" type="button"></button>
+                        <h2 class="element__text">Картинка</h2>
+                        <button class="element__group" type="button" id="like"></button>
                     </div>
                 </div>
             </div>
@@ -51,8 +51,8 @@
                 <div class="element__rectagle">
                     <img class="element__photo" src="./photos/kirill-pershin-1404681-unsplash.jpg " alt="Здесь должна быть картинка ">
                     <div class="element__nogroup">
-                        <h2 class="element__text">картинка</h2>
-                        <button class="element__group" type="button"></button>
+                        <h2 class="element__text">Картинка</h2>
+                        <button class="element__group" type="button" id="like"></button>
                     </div>
                 </div>
             </div>
@@ -60,8 +60,8 @@
                 <div class="element__rectagle">
                     <img class="element__photo" src="./photos/kirill-pershin-1556355-unsplash.jpg " alt="Здесь должна быть картинка ">
                     <div class="element__nogroup">
-                        <h2 class="element__text">картинка</h2>
-                       <button class="element__group" type="button"></button>
+                        <h2 class="element__text">Картинка</h2>
+                       <button class="element__group" type="button" id="like"></button>
                     </div>
                 </div>
             </div>
@@ -69,8 +69,8 @@
                 <div class="element__rectagle">
                     <img class="element__photo" src="./photos/sergey-semukhin-e0WN3koMMMk-unsplash.jpg " alt="Здесь должна быть картинка ">
                     <div class="element__nogroup">
-                        <h2 class="element__text">картинка</h2>
-                        <button class="element__group" type="button"></button>
+                        <h2 class="element__text">Картинка</h2>
+                        <button class="element__group" type="button" id="like"></button>
                     </div>
                 </div>
             </div>
@@ -78,8 +78,8 @@
                 <div class="element__rectagle">
                     <img class="element__photo" src="./photos/viktor-avdeev-rZNBBaHp3jM-unsplash.jpg " alt="Здесь должна быть картинка ">
                     <div class="element__nogroup">
-                        <h2 class="element__text">картинка</h2>
-                        <button class="element__group" type="submit"></button>
+                        <h2 class="element__text">Картинка</h2>
+                        <button class="element__group" type="button" id="like"></button>
                     </div>
                 </div>
             </div>
@@ -88,15 +88,13 @@
             <p class="footer__text">© 2022 Alexsandra Shevtsova</p>
         </footer>
         <section class="popup">
-            <div class="popup__bс">
-                <form class="popup__container">
+                <form class="popup__container popup__bс" method="post" >
                     <button class="popup__close"></button>
                     <h2 class="popup__title">Редактировать профиль</h2>
-                    <input class="form popup__name" type="text" value="Жак-Ив Кусто">
-                    <input class="form popup__profession" type="text" value="Исследователь океана">
+                    <input class="form popup__name"  type="text" >
+                    <input class="form popup__profession" type="text" >
                     <button class="popup__button" type="submit">Сохранить</button>
                 </form>
-            </div>
         </section>
     </div>
     <script src="./index.js"></script>

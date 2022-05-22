@@ -25,8 +25,7 @@ function formSubmitHandler (evt) {
 }
 document.body.append("profileName");
 document.body.append("ProfileProf");
-
-let like = document.getElementById("like");
+let like = document.querySelectorAll(".element__group");
 like.addEventListener("click",()=>{
     like.classList.toggle("element__group-add");
 })

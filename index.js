@@ -1,26 +1,29 @@
-let popup = document.querySelector(".popup");
-let openpopup = document.querySelector(".open-popup");
-let like = document.querySelectorAll(".element__group");
-let groupadd = document.querySelectorAll(".element__group-add");
-like.addEventListener("click", function(){
-    like.classList.toggle("element__group-add");
+let popup = document.querySelector(".popup"); 
+let openpopup = document.querySelector(".open-popup"); 
+let ProfileProf = document.querySelector(".profile__profession");
+let profileName = document.querySelector(".profile__name");
+let PopupName = document.querySelector(".popup__name");
+let popupProfession = document.querySelector(".popup__profession");
+let popupSubmit = document.querySelector(".popup__button");
+let body =document.querySelector(".page");
+openpopup.addEventListener("click",function(){ 
+    popup.classList.add("popup__opened"); 
+})
+popupSubmit.addEventListener("click", function(closePopup){
+    popup.classList.remove(".popup__opened");
 })
 openpopup.addEventListener("click",function(){
-    popup.classList.add("popup_opened");
+    PopupName.value = profileName.textContent;
+    popupProfession.value = ProfileProf.textContent;
 })
-let form = document.querySelector(".form");
-let submit = document.querySelector(".popup__button");
-submit.addEventListener("click", function(){
-    let name = document.querySelector(".popup__name");
-    let profession = document.querySelector(".popup__profession");
-    let profileName = document.querySelector(".profile__name");
-    let profilepProfession = document.querySelector(".profile__profession");
-    name.value="";
-    profession.value="";
-    profileName.textContent=name.value;
-    profilepProfession.textContent=profession.value;
-
+popupSubmit.addEventListener("click",()=>{
+    profileName.value = PopupName.textContent;
+    ProfileProf.value = popupProfession.textContent;
 })
-document.body.append("submit");
+document.body.append("profileName");
+document.body.append("ProfileProf");
 
-
+let like = document.getElementById("like");
+like.addEventListener("click",()=>{
+    like.classList.toggle("element__group-add");
+})

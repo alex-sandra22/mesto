@@ -12,14 +12,17 @@ openpopup.addEventListener("click",function(){
 popupSubmit.addEventListener("click", function(closePopup){
     popup.classList.remove(".popup__opened");
 })
-openpopup.addEventListener("click",function(){
-    PopupName.value = profileName.textContent;
-    popupProfession.value = ProfileProf.textContent;
-})
-popupSubmit.addEventListener("click",()=>{
-    profileName.value = PopupName.textContent;
-    ProfileProf.value = popupProfession.textContent;
-})
+function formSubmitHandler (evt) {
+    evt.preventDefault(); 
+    openpopup.addEventListener("click",function(){
+        PopupName.value = profileName.textContent;
+        popupProfession.value = ProfileProf.textContent;
+    })
+    popupSubmit.addEventListener("click",()=>{
+        profileName.value = PopupName.textContent;
+        ProfileProf.value = popupProfession.textContent;
+    })
+}
 document.body.append("profileName");
 document.body.append("ProfileProf");
 
@@ -27,3 +30,4 @@ let like = document.getElementById("like");
 like.addEventListener("click",()=>{
     like.classList.toggle("element__group-add");
 })
+popup.addEventListener('submit', formSubmitHandler);

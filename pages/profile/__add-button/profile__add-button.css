@@ -12,6 +12,7 @@
     background-position: center;
     background-size: 22px;
     transform: opacity 0.2s linear;
+    cursor:pointer;
 }
 .profile__add-button:hover{
     opacity: 0.5;

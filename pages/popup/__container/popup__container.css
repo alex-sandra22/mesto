@@ -1,5 +1,4 @@
 .popup__container{
-    transform: translate(-50%, -50%) scale(1);
     transition: 0.5s all;
     background: #FFFFFF;
     box-shadow: -16px -8px 25px 0px rgb(0 0 0 / 41%);
@@ -8,14 +7,12 @@
     position: relative;
     margin: auto;
     display: flex;
-    /**flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     padding: 22px;
     align-items: stretch;
     justify-content: center;
     z-index: 10;
-    top: 50%;
-    left: 50%;**/
 
 }
 @media screen and (min-width:581px) {

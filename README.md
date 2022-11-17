@@ -1,6 +1,6 @@
 # Проект: Место
 
-Ccылка на gh-pages- https://github.com/alex-sandra22/mesto
+Ccылка на gh-pages- https://github.com/alex-sandra22/mesto/index.html
 
 **Figma**
 

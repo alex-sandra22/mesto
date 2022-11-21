@@ -1,0 +1,10 @@
+.vector{
+    width: 7.5px;
+    height: 7.5px;
+}
+@media screen and  (min-width:581px) {
+    .vector{
+        width: 10px;
+        height: 10px;
+    }
+}

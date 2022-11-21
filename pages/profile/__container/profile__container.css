@@ -1,9 +1,0 @@
-.profile__container{
-    display: flex;
-    flex-direction: column;
-}
-@media screen and (min-width:581px) {
-    .profile__container{
-        flex-direction: row;
-    }
-}

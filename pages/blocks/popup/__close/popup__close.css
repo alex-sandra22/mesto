@@ -1,0 +1,39 @@
+.popup__close{
+    background-image: url(../../../../photos/Close.svg);
+    color: #FFFFFF; 
+    position: absolute; 
+    right: 0px; 
+    top: -30px; 
+    width: 20px; 
+    height: 20px; 
+    background-size: 20px; 
+    background-color: transparent; 
+    border: none;
+}
+/*.popup__close{
+    background-image: url(../../../../photos/Close.svg);
+    position: absolute;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    right: -35px;
+    top: -35px;
+    color: #FFFFFF;
+    background-color: transparent;
+}*/
+@media screen and (min-width:581px) {
+    .popup__close{
+        right: -40px; 
+        top: -40px; 
+        width: 32px; 
+        height: 32px; 
+        background-size: 32px;
+    }
+}
+.popup__close:hover{
+    opacity: 0.5;
+}

@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Место</title>
-    <link rel="stylesheet" href="./vendor/fonts.css">
     <link rel="stylesheet" href="./pages/index.css">
-    <link rel="stylesheet" href="./vendor/normalize.css">
 </head>
 <body class="page">
     <div class="content">
         <header class="header">
-            <img class="header__logo" src="./photos/Vector.png" alt="здесь должен быть логотип">
+            <img class="header__logo" src="./photos/Logo.svg" alt="здесь должен быть логотип"> 
             
         </header>
         <main>
@@ -23,7 +21,7 @@
                     <div class="profile__content">
                         <h1 class="profile__name">Жак-Ив Кусто</h1>
                         <button  class="profile__edit-button " type="button" >
-                            <img class="vector " src="./photos/Vector(1).svg" alt="здесь что-то  есть" >
+                            <img class="vector " src="./photos/pencil.svg" alt="здесь что-то  есть" >
                         </button>
                     </div>
                     <p class="profile__profession">Исследователь океана</p>
@@ -37,7 +35,7 @@
                         <img class="element__photo" src="./photos/clement-m-igX2deuD9lc-unsplash.jpg " alt="Здесь должна быть картинка ">
                         <div class="element__nogroup">
                             <h2 class="element__text">Картинка</h2>
-                            <button class="element__button-like" type="button" ></button>
+                            <button class="element__button-like" type="button"></button>
                         </div>
                     </div>
                 </div>
@@ -92,15 +90,17 @@
         <footer class="footer">
             <p class="footer__text">© 2022 Alexsandra Shevtsova</p>
         </footer>
-          <div class="popup  ">
-                <form class=" popup__container popup__background " method="post" name="form" >
-                    <button class="popup__close"></button>
+          <div id="form" class="popup  ">
+            <div class="popup__container">
+                <form class="form" method="post" name="form" >
                     <h2 class="popup__title">Редактировать профиль</h2>
-                    <input class="form popup__name"  type="text" >
-                    <input class="form popup__profession" type="text" >
+                    <input class="popup__input popup__input_type_name"  type="text" >
+                    <input class="popup__input popup__input_type_profession" type="text" >
                     <button class="popup__button" type="submit">Сохранить</button>
+                    <button class="popup__close" type="button" ></button>
                 </form>
             </div>
+        </div> 
     </div>
     <script src="./scripts/index.js"></script>
 </body>

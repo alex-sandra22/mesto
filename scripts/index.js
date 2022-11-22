@@ -13,7 +13,7 @@ function openPopup(){
     popupName.value = profileName.textContent;
     popupProfession.value = profileProf.textContent;
 };
- function closepopup(){
+ function close(){
     popup.classList.remove("popup_opened");
 };
 
@@ -21,9 +21,9 @@ function formSubmitHandler(evt) {
     evt.preventDefault(); 
     profileName.textContent = popupName.value;
     profileProf.textContent = popupProfession.value;
-    closepopup();
+    close();
 };
 ediButton.addEventListener("click",openPopup);
-popupSubmit.addEventListener("click",formSubmitHandler);
+closePopup.addEventListener("click",close);
 
 popup.addEventListener('submit', formSubmitHandler);

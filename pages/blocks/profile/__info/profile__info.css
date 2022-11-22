@@ -1,9 +1,0 @@
-.profile__info{
-    margin:22px 0;
-    display: grid;
-}
-@media screen  and (min-width:581px){
-    .profile__info{
-        justify-items: start;
-    } 
-}

@@ -1,6 +1,7 @@
 .profile__info{
     margin:22px 0;
     display: grid;
+    justify-items: center;
 }
 @media screen  and (min-width:670px){
     .profile__info{
